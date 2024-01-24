@@ -1,0 +1,65 @@
+<!doctype html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+            <link rel="stylesheet" href="framework.css">
+            <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> 
+            <title>OptiLiv: Find Your Optimal Home</title>
+        </head>
+        <body>
+            <section class="section">
+                <div class="container">
+                    <!-- Menu Navbar -->
+                                <div class="card-content">
+                                    <nav class="navbar  is-transparent has-centered-menu" role="navigation" aria-label="main navigation">
+                                        <div class="navbar-brand">
+                                            <a class="navbar-item" href="https://">
+                                                <img src="images/logo.png" width="130" height="300">
+                                            </a>
+                                            <!-- Burger Nav -->
+                                            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarTop">
+                                                <span aria-hidden="true"></span>
+                                                <span aria-hidden="true"></span>
+                                                <span aria-hidden="true"></span>
+                                            </a>
+                                        </div>
+                                        <!-- Nav links -->
+                                        <div id="navbarTop" class="navbar-menu">
+                                            <div class="navbar-start">
+                                                <a class="navbar-item"> Home </a>
+                                                <a class="navbar-item"> Buy </a>
+                                                <a class="navbar-item"> Rent </a>
+                                                <a class="navbar-item"> Find Agent </a>
+                                                <a class="navbar-item"> Help </a>
+                                                <a class="navbar-item"> Log In / Sign Up</a>
+                                                
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                </div>
+            </section>
+            <!-- Javascript for burger nav -->
+            <script type="text/javascript">
+               (function() {
+                    var burger = document.querySelector('.burger');
+                    var nav = document.querySelector('#'+burger.dataset.target);
+                    
+                    burger.addEventListener('click', function(){
+                    burger.classList.toggle('is-active');
+                    nav.classList.toggle('is-active');
+                    });
+                })();
+            </script>
+            <footer class="footer">
+                <div class="footerImg">
+                    <img src="images/logo.png" width="80" height="80">
+                </div>
+                <div class="content has-text-centered">
+                  <p>© 2023 OptiLiv</p>
+                </div>
+              </footer>
+        </body>
+    </html>

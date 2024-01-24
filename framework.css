@@ -1,0 +1,28 @@
+
+.section {
+  padding:0;
+}
+
+.container{
+  padding: 0;
+}
+
+.has-centered-menu .navbar-start{
+  flex-grow: 1;
+  justify-content: center;
+}
+
+a.navbar-item{
+    font-size:18px;
+    font-weight:400;
+}
+
+.navbar-menu .navbar-start .navbar-item:hover{
+  color:#f8c104;
+}
+
+.navbar-item > img { 
+  max-height: 500rem; 
+}
+  
+  
